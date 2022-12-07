@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-
+import Button from './Button'
 function Landing() {
   return (
 
@@ -14,7 +14,7 @@ function Landing() {
             </h1>
 
             <div>
-                {/* <Button title='Buy Now'/> */}
+                <Button title='Buy Now'/>
                 <a className='link'>Learn More</a>
             </div>
         </div>
