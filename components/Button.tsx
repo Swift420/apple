@@ -1,12 +1,19 @@
 import React from 'react'
 
 interface Props {
-    title: string
+    title: string,
+    onClick?: ()=> void,
+    width?: string,
+    loading?: boolean,
+    padding?: string,
+    noIcon?: boolean
 }
 
 function Button({title}: Props) {
   return (
-    <div>Button</div>
+    <button>
+        
+    </button>
   )
 }
 
