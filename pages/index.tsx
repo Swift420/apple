@@ -17,6 +17,12 @@ const Home: NextPage = () => {
       <main className='relative h-[200vh] bg-[#E7ECEE]'>
         <Landing/>
       </main>
+
+      <section className='relative z-40 -mt-[100vh] min-h-screen bg-[#101010]'>
+         <h1 className='text-center text-4xl font-medium tracking-wide text-white md:text-5xl'>
+          New Promos
+         </h1>
+      </section>
       </div>
   )
 }
