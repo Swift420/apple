@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-    categories: Category[]
+    categories: Category[] 
 }
 
 export default function handler(
