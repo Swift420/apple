@@ -6,12 +6,26 @@ import Landing from '../components/Landing'
 import {Tab} from '@headlessui/react'
 import { fetchCategories } from '../utils/fetchCategories'
 import { fetchProducts } from '../utils/fetchProducts'
+import Product from '../components/Product'
 
 interface Props {
   categories: Category[],
   products: Product[]
 }
+
+
 const Home = ({categories, products}: Props) => {
+
+  const showProducts = (category: number) => {
+    return products
+    .filter((product)=> product.category._ref === categories[category]._id)
+    .map((product) => 
+      <Product
+      product={product}
+      key={product._id}
+      />
+    )
+  }
   console.log(products)
   return (
     <div className="">
@@ -78,3 +92,4 @@ export const getServerSideProps: GetServerSideProps<Props> = async  () => {
     },
   }
 }
+
